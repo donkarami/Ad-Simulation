@@ -37,3 +37,6 @@ class Ad(BaseAdvertising):
     def inc_views(self):
         super(Ad, self).inc_views()
         self.__advertiser.inc_views()
+
+    def describe_me(self):
+        return "this is a Ad class that manages Ads"
