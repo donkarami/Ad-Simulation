@@ -11,3 +11,6 @@ class Ad(BaseAdvertising):
 
     def get_title(self):
         return self.__title
+
+    def set_title(self, title):
+        self.__title = title
