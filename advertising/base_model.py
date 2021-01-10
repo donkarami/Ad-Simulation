@@ -10,3 +10,6 @@ class BaseAdvertising:
 
     def get_clicks(self):
         return self.__clicks
+
+    def get_views(self):
+        return self.__views
