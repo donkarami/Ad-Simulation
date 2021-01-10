@@ -8,3 +8,6 @@ class Ad(BaseAdvertising):
         self.__img_url = img_url
         self.__link = link
         self.__advertiser = advertiser
+
+    def get_title(self):
+        return self.__title
