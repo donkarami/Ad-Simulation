@@ -26,3 +26,6 @@ class Ad(BaseAdvertising):
 
     def set_link(self, link):
         self.__link = link
+
+    def set_advertiser(self, advertiser):
+        self.__advertiser = advertiser
