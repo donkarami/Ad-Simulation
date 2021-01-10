@@ -25,3 +25,6 @@ class Advertiser(BaseAdvertising):
                "inc_views() : increases number of views\n" + \
                "describe_me() : describes the duty of current class"
 
+    @staticmethod
+    def get_total_clicks():
+        return Advertiser.__total_clicks
