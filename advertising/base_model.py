@@ -16,3 +16,6 @@ class BaseAdvertising:
 
     def inc_clicks(self):
         self.__clicks += 1
+
+    def inc_views(self):
+        self.__views += 1
