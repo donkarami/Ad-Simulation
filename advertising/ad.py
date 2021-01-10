@@ -29,3 +29,11 @@ class Ad(BaseAdvertising):
 
     def set_advertiser(self, advertiser):
         self.__advertiser = advertiser
+
+    def inc_clicks(self):
+        super(Ad, self).inc_clicks()
+        self.__advertiser.inc_clicks()
+
+    def inc_views(self):
+        super(Ad, self).inc_views()
+        self.__advertiser.inc_views()
