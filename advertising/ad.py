@@ -20,3 +20,9 @@ class Ad(BaseAdvertising):
 
     def set_img_url(self, img_url):
         self.__img_url = img_url
+
+    def get_link(self):
+        return self.__link
+
+    def set_link(self, link):
+        self.__link = link
