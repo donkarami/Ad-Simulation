@@ -14,3 +14,9 @@ class Ad(BaseAdvertising):
 
     def set_title(self, title):
         self.__title = title
+
+    def get_img_url(self):
+        return self.__img_url
+
+    def set_img_url(self, img_url):
+        self.__img_url = img_url
