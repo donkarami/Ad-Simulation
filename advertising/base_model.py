@@ -7,3 +7,6 @@ class BaseAdvertising:
 
     def describe_me(self):
         return "this ia a Parent Of Ad and Advertiser class that handle methods and fields exist in both"
+
+    def get_clicks(self):
+        return self.__clicks
