@@ -13,3 +13,15 @@ class Advertiser(BaseAdvertising):
 
     def set_name(self, name):
         self.__name = name
+
+    @staticmethod
+    def help():
+        return "get_name() : returns name of Advertiser\n" + \
+               "set_name() : sets name of Advertiser\n" + \
+               "get_total_clicks() : returns total number of Clicks\n" + \
+               "get_clicks() : returns number of clicks for current advertiser\n" + \
+               "get_views() : returns number of views for current advertiser\n" + \
+               "inc_clicks() : increases number of clicks\n" + \
+               "inc_views() : increases number of views\n" + \
+               "describe_me() : describes the duty of current class"
+
