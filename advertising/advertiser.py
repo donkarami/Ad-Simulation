@@ -28,3 +28,10 @@ class Advertiser(BaseAdvertising):
     @staticmethod
     def get_total_clicks():
         return Advertiser.__total_clicks
+
+    def describe_me(self):
+        return "this is a Advertiser class that manages Advertisers"
+
+    def inc_clicks(self):
+        super(Advertiser, self).inc_clicks()
+        Advertiser.__total_clicks += 1
