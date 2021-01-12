@@ -12,7 +12,7 @@ if __name__ == '__main__':
     print("describing of BaseAdvertising Class: " + base_advertising.describe_me())
     print("describing of Ad Class: " + ad_2.describe_me())
     print("describing of Advertiser Class: " + advertiser_1.describe_me())
-    print("calling get_name() method for advertiser_2: " + advertiser_2.get_name())
+    print("calling get_name() method for advertiser_2: " + advertiser_2.name)
 
     ad_1.inc_views()
     ad_1.inc_views()
@@ -22,10 +22,10 @@ if __name__ == '__main__':
     ad_1.inc_clicks()
     ad_1.inc_clicks()
     ad_2.inc_clicks()
-    advertiser_2.set_name("new name")
+    advertiser_2.name = "new name"
 
-    print("calling get_name() method for advertiser_2:", advertiser_2.get_name());
-    print("number of clicks for ad_1:", ad_1.get_clicks())
-    print("number of clicks for advertiser_2:", advertiser_2.get_clicks())
+    print("calling get_name() method for advertiser_2:", advertiser_2.name)
+    print("number of clicks for ad_1:", ad_1.clicks)
+    print("number of clicks for advertiser_2:", advertiser_2.clicks)
     print("number of total clicks for all advertisers:", Advertiser.get_total_clicks())
     print("help method in Advertiser Class:\n" + Advertiser.help())

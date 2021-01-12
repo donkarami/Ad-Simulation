@@ -4,39 +4,50 @@ from base_model import BaseAdvertising
 class Ad(BaseAdvertising):
     def __init__(self, id, title, img_url, link, advertiser):
         super().__init__(id)
-        self.__title = title
-        self.__img_url = img_url
-        self.__link = link
-        self.__advertiser = advertiser
+        self._title = title
+        self._img_url = img_url
+        self._link = link
+        self._advertiser = advertiser
 
-    def get_title(self):
-        return self.__title
+    @property
+    def title(self):
+        return self._title
 
-    def set_title(self, title):
-        self.__title = title
+    @title.setter
+    def title(self, title):
+        self._title = title
 
-    def get_img_url(self):
-        return self.__img_url
+    @property
+    def img_url(self):
+        return self._img_url
 
-    def set_img_url(self, img_url):
-        self.__img_url = img_url
+    @img_url.setter
+    def img_url(self, img_url):
+        self._img_url = img_url
 
-    def get_link(self):
-        return self.__link
+    @property
+    def link(self):
+        return self._link
 
-    def set_link(self, link):
-        self.__link = link
+    @link.setter
+    def link(self, link):
+        self._link = link
 
+    @property
+    def advertiser(self):
+        return self._advertiser
+
+    @advertiser.setter
     def set_advertiser(self, advertiser):
-        self.__advertiser = advertiser
+        self._advertiser = advertiser
 
     def inc_clicks(self):
         super(Ad, self).inc_clicks()
-        self.__advertiser.inc_clicks()
+        self._advertiser.inc_clicks()
 
     def inc_views(self):
         super(Ad, self).inc_views()
-        self.__advertiser.inc_views()
+        self._advertiser.inc_views()
 
     def describe_me(self):
         return "this is a Ad class that manages Ads"
